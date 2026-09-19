@@ -1,6 +1,6 @@
 # Marek Dohnal
 
-**Python Developer**  
+**Python Developer**   
 Prague, Czech Republic  
 
 [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/) *(personal projects)*

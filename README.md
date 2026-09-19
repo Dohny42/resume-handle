@@ -1,22 +1,46 @@
-# Resume Update Guide
+# Resume – update & generate PDF
 
-This folder contains your resume in Markdown (`marek_dohnal_resume.md`).  
-Keep the Markdown as the **single source of truth**.
+## Files
 
-## Recommended Workflow
+| File | Purpose |
+|------|---------|
+| `marek_dohnal_resume.md` | **Source of truth** – edit this |
+| `generate_resume_pdf.py` | Converts Markdown → PDF (uses markdown-it-py) |
+| `marek_dohnal_resume.pdf` | Latest generated PDF |
 
-1. **Edit the Markdown file** whenever you have updates (new job, projects, skills, etc.).
-2. Use a Markdown → PDF converter when you need a PDF version (examples below).
-3. For the **Projects** section: update it manually or use the helper script once you provide your GitHub username.
+---
 
-### Quick PDF generation
+## Setup
 
-**Pandoc**
+1. Make sure uv [uv](https://docs.astral.sh/uv/#installation) installed
+2. Clone the repository:
 
 ```bash
-pandoc marek_dohnal_resume.md -o marek_dohnal_resume.pdf --pdf-engine=xelatex -V geometry:margin=1in
+git clone https://github.com/Dohny42/resume-handle.git
 ```
 
-### Future
+3. Sync the environment (deps installation):
+```bash
+uv sync
+```
 
-Projects section could be semi-automated through pulling my Github repos.
+4. Activate virtual environment:
+```bash
+.venv/Scripts/activate
+```
+
+## Everyday workflow
+
+1. Edit `marek_dohnal_resume.md` or `styles.css`
+2. Generate the PDF:
+
+```bash
+uv run generate_resume_pdf.py
+```
+
+Or with explicit paths:
+
+```bash
+uv run generate_resume_pdf.py -i marek_dohnal_resume.md -o resume.pdf
+uv run generate_resume_pdf.py --input marek_dohnal_resume.md --output ~/Downloads/Marek_Dohnal.pdf
+```
