@@ -1,0 +1,108 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #2d3748;
+}
+
+/* Name */
+h1 {
+    font-size: 26pt;
+    font-weight: bold;
+    color: #1a2332;
+    margin: 0 0 6pt 0;
+    padding: 0;
+    border-bottom: 1pt solid #e2e8f0;
+    padding-bottom: 8pt;
+}
+
+/* Section headings: Professional Summary, Experience, Education, ... */
+h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #1a2332;
+    margin: 18pt 0 8pt 0;
+    padding: 0;
+    border-bottom: 0.6pt solid #e2e8f0;
+    padding-bottom: 4pt;
+}
+
+/* Job titles / project names */
+h3 {
+    font-size: 11.5pt;
+    font-weight: bold;
+    color: #2c5f6e;
+    margin: 14pt 0 3pt 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 8pt 0;
+    padding: 0;
+}
+
+/* First lines after h1 often act as role / location / links —
+   keep them compact; body paragraphs stay normal */
+h1 + p {
+    font-size: 11.5pt;
+    font-weight: bold;
+    color: #1a2332;
+    margin: 10pt 0 2pt 0;
+}
+
+h1 + p + p {
+    font-size: 10.5pt;
+    font-weight: normal;
+    color: #4a5568;
+    margin: 0 0 2pt 0;
+}
+
+h1 + p + p + p {
+    font-size: 10pt;
+    color: #2b6cb0;
+    margin: 0 0 6pt 0;
+}
+
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+ul {
+    margin: 4pt 0 10pt 0;
+    padding-left: 16pt;
+}
+
+li {
+    margin: 0 0 5pt 0;
+    line-height: 1.4;
+}
+
+strong {
+    font-weight: bold;
+    color: #1a2332;
+}
+
+em {
+    font-style: italic;
+    color: #4a5568;
+}
+
+blockquote {
+    margin: 6pt 0 10pt 0;
+    padding-left: 10pt;
+    border-left: 2pt solid #e2e8f0;
+    color: #4a5568;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 0.6pt solid #e2e8f0;
+    margin: 10pt 0;
+}
+
+/* Company line often bold in markdown → keep dark */
+h3 + p strong {
+    color: #1a2332;
+}
